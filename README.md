@@ -53,7 +53,7 @@ press the 'q' button to move previous video. 'ESC' button can make you close the
 </p>
 
 
-## Making Error Data
+## Marking Error Data
 
 If you found the error data which the unmatched or missing skeleton in the process of checking videos,  
 you can simply mark the current video and skeleton by pressing 'x' button. 
