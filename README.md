@@ -1,8 +1,8 @@
 # NTU DB Data Loader
 
 * Please refer to the link below for more detailed information about NTU DB:
-(http://rose1.ntu.edu.sg/datasets/actionrecognition.asp)
 <br />
+(http://rose1.ntu.edu.sg/datasets/actionrecognition.asp)
 (https://github.com/shahroudy/NTURGB-D)
 <br />
 
@@ -50,7 +50,7 @@ While you are watching the video, press the button 'e' to move next video immedi
 press the 'q' button to move previous video. 'ESC' button can make you close the program. 
 
 <p align="center">
-    <img width="640" height="480" src=img/control.png>
+    <img width="824" height="458" src=img/control.png>
 </p>
 
 
