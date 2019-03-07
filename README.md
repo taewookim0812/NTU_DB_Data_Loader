@@ -1,7 +1,6 @@
 # NTU DB Data Loader
 
 * Please refer to the link below for more detailed information about NTU DB:
-<br />
 (http://rose1.ntu.edu.sg/datasets/actionrecognition.asp)
 (https://github.com/shahroudy/NTURGB-D)
 <br />
