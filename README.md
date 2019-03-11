@@ -15,6 +15,18 @@ There are some errors in data which the skeleton and the performer are not match
 These data can be excluded by marking them and putting on a list.
 After making the exception file list, you can utilize it to separate the error data from the original.          
 
+## Update 2019/03/11
+
+Update Note:
+
+1. Show mode. If the "show_mode" variable is set to 0, shows all the original NTU DB data. If 1, shows only normal data 
+with the exception of the files listed on the exception file. And if 2, loads and shows only the error files from exception file list.    
+2. Append mode. If you already have the exception file, and you missed excluding some error data
+from original data, you can append the error data to the list that you missed before. 
+By setting the "with_append" and "save_exception_list" variables "True", you can do the appending.
+3. Skeleton data class was moved to the independent file " Skeleton.py". 
+Therefore you should import the classes to use the skeleton class.   
+
 ## Data Loading  
 
 ***Notice
