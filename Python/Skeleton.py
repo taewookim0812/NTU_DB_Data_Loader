@@ -1,3 +1,9 @@
+"""
+NTU_DB Skeleton Class
+
+@author: Tae-woo Kim
+e-mail: twkim0812@gmail.com
+"""
 
 class Joint_struct:
     def __init__(self, joint_vec):
