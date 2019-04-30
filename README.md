@@ -15,6 +15,16 @@ There are some errors in data which the skeleton and the performer are not match
 These data can be excluded by marking them and putting on a list.
 After making the exception file list, you can utilize it to separate the error data from the original.          
 
+## Update 2019/04/30
+
+Update Note:
+
+1. Append mode was removed. Now the appending is determined by show mode. 
+If the show mode is 0(show all) or 1(show only filtered files), will be merged automatically.
+2. Re-inclusion mode was added. You might make mistakes that add a normal file to the exception list
+while filtering the data. In that situation, you can remove the normal file name from the exception list
+by pressing 'z' button in show mode 2(show only error data).
+
 ## Update 2019/03/11
 
 Update Note:
