@@ -24,7 +24,7 @@ If the show mode is 0(show all) or 1(show only filtered files), will be merged a
 2. Re-inclusion mode was added. You might make mistakes that add a normal file to the exception list
 while filtering the data. In that situation, you can remove the normal file name from the exception list
 by pressing 'z' button in show mode 2(show only error data).
-3. A bug was fixed. If a skeleton was not found in a video, then the video would be added to the exception list. 
+3. A bug was fixed. If a skeleton was not found in a video, then the video is added to the exception list. 
 
 ## Update 2019/03/11
 
