@@ -52,10 +52,10 @@ Z: mark current video clip to be included from the exception file list
 # ****************************************************
 # ***** Main Control Parameter for NTU-DB Search *****
 # ****************************************************
-show_mode = 0   # 0: show all data, 1: show only good, 2:show only bad
+show_mode = 0   # 0: show all data, 1: show only good, 2:show only error
 save_exception_list = True    # save exception file list
 
-iAction = 31                   # Action class number
+iAction = 39                   # Action class number
 # ****************************************************
 
 # set file path
@@ -118,7 +118,7 @@ print('Filtered skeleton len: ', len(skeleton_file_list))
 index = 0
 backward = False
 stop = False
-frame_rate = 30     # Hz
+frame_rate = 60     # Hz
 period = int((1.0/frame_rate) * 1000)
 
 # -----[ Main Loop ]-----
@@ -149,7 +149,12 @@ while index < len(video_file_list):
                 jointInfo = np.fromstring(file.readline(), sep=' ', dtype='float64')
                 joint = Joint_struct(jointInfo)
                 body.joints.append(joint)
-            skel.append_body(f, b, body)
+            try:
+                skel.append_body(f, b, body)
+            except IndexError:
+                exception_avi_list.append(video_file_list[index])
+                exception_skel_list.append(skeleton_file_list[index])
+                print('Skeleton was not found..')
     file.close()
 
     # print(skel.print_skeleton_info())
